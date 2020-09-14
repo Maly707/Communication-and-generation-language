@@ -4,7 +4,7 @@ Language one of the main tools we used as human beings to communicate, without l
 # Week3 Access Twitter API
 In this week we create Twitter API by accessing <a href='https://developer.twitter.com/en'>Twitter Developer Portal</a>, once we created project, we got Consumer Keys and Secret also we got Authentication Tokens, next we can use the documentation to call the API throw python. Installed tweepy package and create 2 classes the first one to initiate the connection with the API the second class to retrieve the target data. By calling getTimeline method from FetchData class will retrieve all the statuses for this user, also getUserInformation from the same class will provide more information about the user. <a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/week3-Access%20Twitter%20API.ipynb'>Week3 Access Twitter API</a>
 
-#Reference:<br>
+# Reference:<br>
 •	https://pypi.org/project/tweepy/<br>
 •	https://www.geeksforgeeks.org/python-api-get_status-in-tweepy/?ref=rp<br>
 •	http://gettwitterid.com/?user_name=ddlovato&submit=GET+USER+ID<br>
