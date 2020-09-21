@@ -4,8 +4,20 @@ Language one of the main tools we used as human beings to communicate, without l
 # Week 3 Access Twitter API
 In this week we create Twitter API by accessing <a href='https://developer.twitter.com/en'>Twitter Developer Portal</a>, once we created project, we got Consumer Keys and Secret also we got Authentication Tokens, next we can use the documentation to call the API throw python. Installed tweepy package and create 2 classes the first one to initiate the connection with the API the second class to retrieve the target data. By calling getTimeline method from FetchData class will retrieve all the statuses for this user, also getUserInformation from the same class will provide more information about the user. <a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/week3-Access%20Twitter%20API.ipynb'>Week3 Access Twitter API</a>
 
+# week 4 Celebrities bio
+In Week 4 we solve the issue we faced in week 3 twitter API does not retrieve birthdate or age, the going around by data scraping all the famous celebrity’s bios from google which provide date of birth and all the social media accounts the strong point of this solution is data is more trusted, the technology been used python Beautiful Soup.
+Profiles been created for each celebrity with the data needed (birth date, social media links)
+The data from week 3 been linked with the profiling record from week 4.
+<a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/week%204%20Celebrities%20bio%20.ipynb'>week 4 Celebrities bio</a>
+
 # Reference:<br>
 •	https://pypi.org/project/tweepy/<br>
 •	https://www.geeksforgeeks.org/python-api-get_status-in-tweepy/?ref=rp<br>
 •	http://gettwitterid.com/?user_name=ddlovato&submit=GET+USER+ID<br>
 •	https://groups.google.com/forum/#!topic/twitter4j/Nibyf30jIBs<br>
+•	https://stackoverflow.com/questions/753052/strip-html-from-strings-in-python<br>
+•	https://www.geeksforgeeks.org/python-string-replace/<br>
+•	https://hackernoon.com/how-to-scrape-google-with-python-bo7d2tal<br>
+•	https://developers.google.com/people<br>
+•	https://realpython.com/beautiful-soup-web-scraper-python/<br>
+
