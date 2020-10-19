@@ -22,21 +22,71 @@ Also create twitter API to call twitter profile I found in them bio, I did filte
 <li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/Celebrities%20bio.csv'>bio data after scrapping and formatted </a></li>
 <li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/TwitterAPI.ipynb'>Twitter API</a></li>
 <li><a href='https://developer.twitter.com/en'>Twitter Developer Portal</a></li>
-<hr>
+<hr><br>
 
-# week 4 Celebrities bio
-In Week 4 we solve the issue we faced in week 3 twitter API does not retrieve birthdate or age, the going around by data scraping all the famous celebrity’s bios from google which provide date of birth and all the social media accounts the strong point of this solution is data is more trusted, the technology been used python Beautiful Soup.
-Profiles been created for each celebrity with the data needed (birth date, social media links)
-The data from week 3 been linked with the profiling record from week 4.
-<a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/week%204%20Celebrities%20bio%20.ipynb'>week 4 Celebrities bio</a>
+# Link data
+In this stage I linked the user profile using his google bio to twitter account by looping over google profiling collected from scraping and use the twitter account in the bio information to get most his tweets from his/her account, the only challenge here I takes long time since twitter strict them API call with number of calls before go sleep for 15 min. to be able to place any new call.
+
+The data been stored in csv file to save time from calling the API my account authentication is included in the code to be able to use it for testing.
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/extractUserProfileAndTweets.ipynb'>Code to extract the data from the profiling and link it with twitter account. Repeating the code to catch any network failed records</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/data.csv'>The profiling data after added generation column with excel</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/tweetsData.csv'>All the tweets for all users with generation column </a>this file will save a lot of time for you since generate this file may take over 5 h estimated</li>
+<hr><br>
+
+# Data analysis and discover:
+Start to discover the data and group the data with generation groups which was:
+
+<li>30s	People who born from 1930 to 1939</li>
+<li>40s	People who born from 1940 to 1949</li>
+<li>50s	People who born from 1950 to 1959</li>
+<li>60s	People who born from 1960 to 1969</li>
+<li>70s	People who born from 1970 to 1979</li>
+<li>80s	People who born from 1980 to 1989</li>
+<li>90s	People who born from 1990 to 1999</li>
+<li>00s	People who born from 2000 and after</li>
+
+These groups been generated from date of birth it is not in the code because I did use excel to generate this column
+
+The column been added to the csv file to save the time for later
+Also generate graph to compare between percentage of the user per generation and tweets per generation.
+
+
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/DataDiscovery.ipynb'>Comparison between user percentage and tweets per generation</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/data.csv'>The profiling data after added generation column with excel</a></li>
+<hr><br>
+
+# Data cleansing:
+It was one of the important process where deleted the duplicate profiles duplicate tweets for same user also clean the text from image, links, emojis, mentions, spaces and punctuations
+
+Also delete the empty tweets after the cleanup. 
+
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/dataCleansing.ipynb'>Comparison between user percentage and tweets per generation</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/wordMatrix.csv'>The profiling data after added generation column with excel</a></li>
+<hr><br>
+
+
+# Data preparation, model and testing:
+One of the long processors is break sentences to words where take each sentence and break it to word and classify it in which generation if it new word will be added if it was before it will add to the number.
+
+<div style='style="text-align: center;"'>
+<h4>Word matrix example</h4>
+<img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/wordMatrix.PNG' title='Word matrix example' height="400"/>
+<br>
+</div>
+After words create the model based on this table and train and test the model.
+
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/dataModeling.ipynb'>The code for prepare the data for the model and create train and test the model</a></li>
+<hr><br>
 
 # Reference:<br>
-•	https://pypi.org/project/tweepy/<br>
-•	https://www.geeksforgeeks.org/python-api-get_status-in-tweepy/?ref=rp<br>
-•	http://gettwitterid.com/?user_name=ddlovato&submit=GET+USER+ID<br>
-•	https://groups.google.com/forum/#!topic/twitter4j/Nibyf30jIBs<br>
-•	https://stackoverflow.com/questions/753052/strip-html-from-strings-in-python<br>
-•	https://www.geeksforgeeks.org/python-string-replace/<br>
-•	https://hackernoon.com/how-to-scrape-google-with-python-bo7d2tal<br>
-•	https://developers.google.com/people<br>
-•	https://realpython.com/beautiful-soup-web-scraper-python/<br>
+<li>https://pypi.org/project/tweepy/</li>
+<li>https://www.geeksforgeeks.org/python-api-get_status-in-tweepy/?ref=rp</li>
+<li>http://gettwitterid.com/?user_name=ddlovato&submit=GET+USER+ID</li>
+<li>https://groups.google.com/forum/#!topic/twitter4j/Nibyf30jIBs</li>
+<li>https://stackoverflow.com/questions/753052/strip-html-from-strings-in-python</li>
+<li>https://www.geeksforgeeks.org/python-string-replace/<br>
+<li>https://hackernoon.com/how-to-scrape-google-with-python-bo7d2tal</li>
+<li>https://developers.google.com/people</li>
+<li>https://realpython.com/beautiful-soup-web-scraper-python/</li>
+https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2</li>
+
