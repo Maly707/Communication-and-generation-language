@@ -60,7 +60,7 @@ It was one of the important process where deleted the duplicate profiles duplica
 
 Also delete the empty tweets after the cleanup. 
 
-<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/dataCleansing.ipynb'>Comparison between user percentage and tweets per generation</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/dataCleansing.ipynb'>Code to clean the tweets text and generate word matrix</a></li>
 <li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/wordMatrix.csv'>The profiling data after added generation column with excel</a></li>
 <hr><br>
 
