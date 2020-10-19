@@ -4,8 +4,11 @@ Language one of the main tools we used as human beings to communicate, without l
 
 # Data collection
 First part of the project was data collection, I did chose twitter over facebook or other social media for flexibility, the only issue I found in twitter API that they don’t share anything about the age or even the date of birth so I used Google to collect some celebrities profile with them twitter account and them date of birth, also I found more details it might be useful in other project or if decide to expand in this project like relative, place of birth, position, career …
-<div><h4>Biography bar</h4></div>
+<div><h4>Google search biography bar</h4></div>
 <img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/Capture.PNG' title='google search people bar'/>
+
+<div><h4>Google search biography information card</h4></div>
+<img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/bio%20bar.PNG' title='google search people bar'/>
 
 For getting random profile I was just search by jobs or key word famous people.
 After that from the list in the top I loop in each person to extract the information from his/her card.
@@ -13,9 +16,11 @@ And store all the data in csv file after the data scraping.
 
 Also create twitter API to call twitter profile I found in them bio, I did filter after word the users without Twitter account or when I found his/her account not work or not been use or private.
 
-<li><a href='https://developer.twitter.com/en'>Twitter Developer Portal</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/scrapingGoogleSearch.ipynb'>Code for data scraping the bio information from google search.</a></li>
+<li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/Celebrities%20bio.csv'>bio data after scrapping and formatted </a></li>
 <li><a href='https://github.com/Maly707/Communication-and-generation-language/blob/master/TwitterAPI.ipynb'>Twitter API</a></li>
-
+<li><a href='https://developer.twitter.com/en'>Twitter Developer Portal</a></li>
+<hr>
 
 # week 4 Celebrities bio
 In Week 4 we solve the issue we faced in week 3 twitter API does not retrieve birthdate or age, the going around by data scraping all the famous celebrity’s bios from google which provide date of birth and all the social media accounts the strong point of this solution is data is more trusted, the technology been used python Beautiful Soup.
