@@ -88,5 +88,5 @@ After words create the model based on this table and train and test the model.
 <li>https://hackernoon.com/how-to-scrape-google-with-python-bo7d2tal</li>
 <li>https://developers.google.com/people</li>
 <li>https://realpython.com/beautiful-soup-web-scraper-python/</li>
-https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2</li>
+<li>https://towardsdatascience.com/solving-a-simple-classification-problem-with-python-fruits-lovers-edition-d20ab6b071d2</li>
 
