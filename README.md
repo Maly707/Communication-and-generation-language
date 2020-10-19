@@ -4,6 +4,7 @@ Language one of the main tools we used as human beings to communicate, without l
 
 # Data collection
 First part of the project was data collection, I did chose twitter over facebook or other social media for flexibility, the only issue I found in twitter API that they don’t share anything about the age or even the date of birth so I used Google to collect some celebrities profile with them twitter account and them date of birth, also I found more details it might be useful in other project or if decide to expand in this project like relative, place of birth, position, career …
+<div><h4>Biography bar</h4></div>
 <img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/Capture.PNG' title='google search people bar'/>
 
 For getting random profile I was just search by jobs or key word famous people.
