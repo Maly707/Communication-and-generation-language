@@ -8,7 +8,7 @@ First part of the project was data collection, I did chose twitter over facebook
 <img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/Capture.PNG' title='google search people bar'/>
 
 <div><h4>Google search biography information card</h4></div>
-<img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/bio%20bar.PNG' title='google search people bar' size = 40%/>
+<img src='https://github.com/Maly707/Communication-and-generation-language/blob/master/images/bio%20bar.PNG' title='google search people bar' height="400"/>
 
 For getting random profile I was just search by jobs or key word famous people.
 After that from the list in the top I loop in each person to extract the information from his/her card.
